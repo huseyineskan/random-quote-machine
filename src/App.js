@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
+import { FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 
 const quotes = [
   {
@@ -48,11 +48,19 @@ function Quote() {
       <p id="author">- {currentQuote.author}</p>
       <div className="row">
         <div className="socials">
-          <a id="tweet-quote" href="https://twitter.com/intent/tweet">
+          <a
+            id="tweet-quote"
+            target="_blank"
+            href={`https://twitter.com/intent/tweet?text=${currentQuote.quote} - ${currentQuote.author}`}
+          >
             <FaXTwitter />
           </a>
-          <a id="tweet-quote" href="https://facebook.com/">
-            <FaFacebookF />
+          <a
+            id="linkedin-quote"
+            target="_blank"
+            href={`https://www.linkedin.com/shareArticle?mini=true&text="${currentQuote.quote}" - ${currentQuote.author}`}
+          >
+            <FaLinkedinIn />
           </a>
         </div>
         <button id="new-quote" onClick={newQuote}>
