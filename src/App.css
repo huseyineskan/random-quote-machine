@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#quote-box {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  width: 50%;
+  text-align: center;
+}
+
+#quote-box p {
+  color: #282c34;
+}
+
+#text {
+  font-size: 1em;
+}
+
+#author {
+  margin-top: 10px;
+  font-size: 0.6em;
+  text-align: right;
+}
+
+.row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials a:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials a svg {
+  color: #282c34;
+  transition: 200ms ease;
+  text-align: center;
+  font-size: 1em;
+}
+
+.socials a svg:hover {
+  color: #61dafb;
+}
+
+#new-quote {
+  background-color: #282c34;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
