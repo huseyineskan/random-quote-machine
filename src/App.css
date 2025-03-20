@@ -25,6 +25,7 @@
   margin: 20px;
   width: 50%;
   text-align: center;
+  box-shadow: 20px 20px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 #quote-box p {
@@ -59,9 +60,9 @@
   font-size: 20px;
 }
 
-.socials a svg:hover {
+/* .socials a svg:hover {
   color: #61dafb;
-}
+} */
 
 #new-quote {
   background-color: #282c34;
@@ -69,4 +70,7 @@
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 0.6em;
+  transition: 200ms ease;
 }
